@@ -25,7 +25,7 @@ main{
 .contenedor__todo{
     width: 100%;
     max-width: 800px;
-    margin: center;
+    margin: auto;
     position: relative;
 }
 
@@ -43,4 +43,13 @@ main{
     color: white;
     transition: all 500ms;
 
+}
+
+.caja__trasera div p,
+.caja__trasera div button{
+    margin-top: 30px;
+}
+
+.caja__trasera div h3{
+    font-weight: 400;
 }
