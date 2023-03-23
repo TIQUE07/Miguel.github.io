@@ -35,7 +35,7 @@ main{
     display: flex;
     justify-content: center;
     backdrop-filter: blur(10px);
-    background-color: rgb(204, 84, 204);
+    background-color: rgb(205, 95, 205, 0.45,);
 }
 
 .caja__trasera div{
@@ -52,4 +52,29 @@ main{
 
 .caja__trasera div h3{
     font-weight: 400;
+    font-size: 26px;
+}
+
+.caja__trasera button{
+    padding: 10px 40px;
+    border: 2px solid #fff;
+    background: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #fff;
+    outline: none;
+    transform: all 300ms;
+}
+
+.caja__trasera button:hover{
+    background: #fff;
+    color: #46a2fd;
+}
+
+.contenedor__login-register{
+    width: 100%;
+    padding: 80px 20px;
+    background: #fff;
+    position: absolute;
 }
