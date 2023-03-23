@@ -48,7 +48,41 @@ body{
 
 /*fin de header */
 
+/*Globales*/
 
+img{
+    max-width: 100%;
+  }
+  
+  .contenedor {
+    max-width: 120rem; /* Equivale a 1000 px */
+    /*
+    margin-left: auto;
+    margin-right: auto;
+    */
+    margin: 0 auto;
+  }
+
+/* fin globales */
+
+/* Iconos Nosotros */
+
+.iconos-nosotros {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .icono {
+    flex-basis: (33.3% - 1rem);
+    text-align: center;
+  }
+  
+  .icono h3 {
+    text-transform: uppercase;
+  }
+
+  /* iconos nosotros fin */ 
+  
 .container{
     width: 90%;
     max-width: 1200px;
