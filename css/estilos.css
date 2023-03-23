@@ -82,7 +82,76 @@ img{
   }
 
   /* iconos nosotros fin */ 
+
+  /* Navegación*/
+.navegacion a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.8rem; /* = 18px */
+    margin-right: 2rem;
+  }
   
+  .navegacion a:hover {
+    color: #71b100;
+  }
+  
+  .navegacion a:last-of-type {
+    margin: 0;
+  }
+
+  /* fin navegacion */
+  /*anuncios*/
+
+.contenido-nosotros{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 2rem;
+  }
+  
+  .texto-nosotros blockquote{
+    font-weight: 900;
+    font-size: 2rem;
+    margin: 0;
+    padding: 1rem 0;
+  }
+  /* fin anuncios*/ 
+
+  /* Iconos Nosotros */
+
+.iconos-nosotros {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .icono {
+    flex-basis: (33.3% - 1rem);
+    text-align: center;
+  }
+  
+  .icono h3 {
+    text-transform: uppercase;
+  }
+  /* fin iconos Nosotros */ 
+  /* Footer */
+
+.site-footer{
+    background-color: #333333;
+    margin-bottom: 0;
+  }
+  
+  .contenedor-footer{
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .copyright{
+    margin: 0;
+    color: #fff;
+  }
+
+  /* fin footer */ 
+
 .container{
     width: 90%;
     max-width: 1200px;
