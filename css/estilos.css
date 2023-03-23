@@ -903,9 +903,10 @@ overflow: hidden;
 
 /*anuncios*/
 
-.contenido-nosotros{
-    width: 100px;
-    height: 100px;
+.contenido-nosotros{ 
+    display:grid;
+    grid-template-columns: 10% 10%;
+    grid-column-gap: 2rem;
  
 }
 
