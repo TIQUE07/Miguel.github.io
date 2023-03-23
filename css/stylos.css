@@ -75,6 +75,10 @@ main{
 .contenedor__login-register{
         display: flex;
         align-items: center;
+        width: 100%;
+        max-width: 380px;
+        position: relative;
+        top: -185px;
 
 }
 
