@@ -13,7 +13,8 @@ body{
 
 
 .site-header{
-    background-color: #333333;
+    --color-price: #1D293F;
+    background-color: ;
     padding: 1rem 0 3rem 0;
 }
 
@@ -28,7 +29,7 @@ body{
 .contenido-header h1 {
   color: #ffffff;
   padding-bottom: 2rem;
-  max-width: 60rem;
+  max-width: 50rem;
   line-height: 2;
 }
 
