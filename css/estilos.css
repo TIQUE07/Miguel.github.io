@@ -297,7 +297,7 @@ p, a{
     }
 }
 .contenido-nosotros{
-    background-image: url('../img/nosotros.jpg');
+    background-image: url('../img/fondo.jpg');
     display: grid;
     grid-template-rows: repeat(2,1fr);
     background-size: cover;
@@ -425,7 +425,7 @@ p, a{
 }
 
 .informacion-contacto{
-    background-image: url('../img/contacto.jpg');
+    background-image: url('../img/css.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -506,6 +506,7 @@ p, a{
     text-align: center;
 }
 
+
 @media(min-width: 768px) {
     .footer{
         display: flex;
@@ -513,3 +514,11 @@ p, a{
         justify-content: space-around;
     }
 }
+
+
+
+
+
+
+
+
