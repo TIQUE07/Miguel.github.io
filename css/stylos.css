@@ -110,5 +110,5 @@ body{
 .input input[type="submit"]:hover{
   
     cursor: pointer;
-    background-color: var(--azulOscuro);
+    background-color: var(#7008bbd5);
 }
