@@ -1,6 +1,6 @@
 :root{
-    --azul:#134074;
-    --azulOscuro:#0B2545;
+    --azul:#841c90;
+    --azulOscuro:#932e84;
     --azulGris:#8DA9C4;
     --blanco:#fff;
     --fuente:'Quicksand', sans-serif;
@@ -28,7 +28,7 @@ body{
 }
 
 .imagen-formulario{
-    background-image: url('../img/bg.jpg');
+    background-image: url('../imagenes/css.jpg');
     background-position: center center;
     background-size: cover;
     height: 200px;
