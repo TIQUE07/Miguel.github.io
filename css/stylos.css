@@ -99,7 +99,7 @@ body{
     outline: none;
 }
 .input input[type="submit"]{
-    background-color: var(--azulGris);
+    background-color: var(#4f0e45d5);
     color: var(--blanco);
     font-size: 22px;
     font-weight: bold;
