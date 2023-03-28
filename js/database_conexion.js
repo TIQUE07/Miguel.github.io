@@ -1,27 +1,42 @@
 const mysql = require('mysql');
 
- 
-
 const connection = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: '2407',
-  database: 'curso_desarrollo'
+  host: 'localhost',
+  user: 'root',
+  password: '2407',
+  database: 'curso_desarrollo'
 });
 
- 
-
-connection.connect((error) => {
-  if (error) {
-    console.error('Error al conectar a MySQL: ' + error.stack);
-    return;
-  }
-
- 
-
-  console.log('Conexión exitosa a MySQL con el ID ' + connection.threadId);
+connection.connect((err) => {
+  if (err) {
+    console.error('Error al conectarse a la base de datos: ' + err.stack);
+    return;
+  }
+  console.log('Conexión exitosa a la base de datos.');
 });
 
+connection.query('SELECT * FROM iniciar sesion', (error, results, fields) => {
+  if (error) throw error;
+  console.log('Los resultados de la consulta son: ', results);
+});
 
-
-
+$.get('/consulta', (data) => {
+  // Mostrar los resultados en una tabla
+  var table = $('<table>').appendTo('body');
+  var headerRow = $('<tr>').appendTo(table);
+  Object.keys(data[0]).forEach((key) => {
+    $('<th>').text(key).appendTo(headerRow);
+  });
+  data.forEach((row) => {
+    var tableRow = $('<tr>').appendTo(table);
+    Object.values(row).forEach((value) => {
+      $('<td>').text(value).appendTo(tableRow);
+    });
+  });
+});
+app.get('/consulta', (req, res) => {
+  connection.query('SELECT * FROM iniciar sesion', (error, results, fields) => {
+    if (error) throw error;
+    res.send(results);
+  });
+});
