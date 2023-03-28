@@ -15,7 +15,7 @@ connection.connect((err) => {
   console.log('Conexión exitosa a la base de datos.');
 });
 
-connection.query('SELECT * FROM iniciar sesion', (error, results, fields) => {
+connection.query('SELECT * FROM registro', (error, results, fields) => {
   if (error) throw error;
   console.log('Los resultados de la consulta son: ', results);
 });
@@ -35,7 +35,7 @@ $.get('/consulta', (data) => {
   });
 });
 app.get('/consulta', (req, res) => {
-  connection.query('SELECT * FROM iniciar sesion', (error, results, fields) => {
+  connection.query('SELECT * FROM registro', (error, results, fields) => {
     if (error) throw error;
     res.send(results);
   });
