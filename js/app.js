@@ -39,3 +39,15 @@ function fechaActual(){
     fecha.textContent = fechaHoy;
 }
 
+document.querySelector('#peticion').addEventListener('click',()=>{
+    let data = {
+        nombre: document.querySelector('#nombre').value
+    }
+
+    console.log(data);
+    fetch('http://localhost:3000/consulta')
+    .then(resp=>resp.json())
+    .then(data=>{
+        console.log(data);
+    });
+});

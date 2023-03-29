@@ -1,7 +1,7 @@
 const mysql = require('mysql');
 
 const connection = mysql.createConnection({
-  host: 'localhost',
+  host: 'localhost:3306',
   user: 'root',
   password: '2407',
   database: 'curso_desarrollo'
@@ -15,8 +15,8 @@ connection.connect((err) => {
   console.log('Conexión exitosa a la base de datos.');
 });
 
-connection.query('SELECT * FROM registro', (error, results, fields) => {
-  if (error) throw error;
+connection.query('SELECT * FROM registro', (err, results, fields) => {
+  if (err) throw err;
   console.log('Los resultados de la consulta son: ', results);
 });
 
@@ -35,8 +35,8 @@ $.get('/consulta', (data) => {
   });
 });
 app.get('/consulta', (req, res) => {
-  connection.query('SELECT * FROM registro', (error, results, fields) => {
-    if (error) throw error;
+  connection.query('SELECT * FROM registro', (err, results, fields) => {
+    if (err) throw err;
     res.send(results);
   });
 });
