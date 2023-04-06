@@ -15,6 +15,7 @@ connection.connect((err) => {
   console.log('Conexión exitosa a la base de datos.');
 });
 
+
 connection.query('SELECT * FROM registro', (err, results, fields) => {
   if (err) throw err;
   console.log('Los resultados de la consulta son: ', results);
