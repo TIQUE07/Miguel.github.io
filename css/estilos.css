@@ -515,6 +515,11 @@ p, a{
     }
 }
 
+.alert{
+    background-color: #f1c40f;
+    border: 2px solid #f39c12;
+    padding: 10px;
+}
 
 
 
