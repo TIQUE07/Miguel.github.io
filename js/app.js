@@ -2,7 +2,7 @@ const hamburguesa = document.querySelector('.hamburguesa');
 const navegacion = document.querySelector('.navegacion');
 const enlaces = document.querySelectorAll('.navegacion a');
 const fecha = document.querySelector('.fecha');
-
+const userlist = [];
 
 document.addEventListener('DOMContentLoaded',()=>{
     mostrarMenu();
@@ -41,17 +41,23 @@ function fechaActual(){
     fecha.textContent = fechaHoy;
 }
 
+function obtenerUsuarios(){
+    fetch('http://localhost:3000/consulta')
+    .then(resp=>resp.json())
+    .then(data=>{
+        console.log(data);
+        this.userlist=data;
+    });
+}
+
 document.querySelector('#peticion').addEventListener('click',()=>{
     let data = {
         nombre: document.querySelector('#nombre').value
     }
 
     console.log(data);
-    fetch('http://localhost:3000/consulta')
-    .then(resp=>resp.json())
-    .then(data=>{
-        console.log(data);
-    });
+
+   obtenerUsuarios();
 });
 
 

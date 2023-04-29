@@ -30,6 +30,7 @@ connection.query('SELECT * FROM registro', (err, results, fields) => {
 
 app.get('/consulta', (req, res) => {
     connection.query('SELECT * FROM curso_desarrollo.registro', (err, results, fields) => {
+        debugger
         if (err) throw err;
         res.send(results);
     });
